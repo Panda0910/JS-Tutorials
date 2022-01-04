@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie app</title>
+    <link rel="icon" href="./img/movie-logo-app.svg" />
+    <!-- ========== Use google fonts ========== -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- @====== sidebar ======@ -->
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <div class="sidebar-brand">
+            <a href="/">Movies</a>
+          </div>
+          <ul class="sidebar-menu">
+            <h3 class="sidebar-title">Menu</h3>
+            <li class="sidebar-item active">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> home </span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> verified_user </span>
+                <span>Community</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> explore </span>
+                <span>Discover</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> local_activity </span>
+                <span>Awards</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> person </span>
+                <span>Celebs</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar-menu">
+            <h3 class="sidebar-title">Library</h3>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> watch_later </span>
+                <span>Recent</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> star </span>
+                <span>Top Rated</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> download_for_offline </span>
+                <span>Downloaded</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar-menu">
+            <h3 class="sidebar-title">Category</h3>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> smart_display </span>
+                <span>TV - Show</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> videocam </span>
+                <span>Movie</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> movie </span>
+                <span>Anime</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar-menu">
+            <h3 class="sidebar-title">General</h3>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> settings </span>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#!" class="sidebar-link">
+                <span class="material-icons-round"> logout </span>
+                <span>Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- @====== /sidebar ======@ -->
+      <!-- @====== main ======@ -->
+      <main>
+        <!-- @====== header ======@ -->
+        <header class="header">
+          <div class="header-container">
+            <ul class="header-menu">
+              <li class="header-item active">Movie</li>
+              <li class="header-item">Anime</li>
+            </ul>
+
+            <div class="header-search">
+              <span class="material-icons-round"> search </span>
+              <input type="text" id="searchText" placeholder="Search" />
+            </div>
+          </div>
+        </header>
+        <!-- @====== /header ======@ -->
+        <!-- @====== home ======@ -->
+        <section class="home">
+          <!-- @====== banner ======@ -->
+          <div class="banner">
+            <h4 class="banner-subheading">season 10</h4>
+            <h3 class="banner-heading">supernatural</h3>
+            <p class="banner-desc">action, horror, comedy</p>
+            <div class="banner-btn">
+              <a href="#!" class="btn btn-primary">watch now</a>
+              <a href="#!" class="btn btn-glass">+ </a>
+            </div>
+            <img src="./img/movie-banner.jpg" class="banner-img" />
+          </div>
+          <!-- @====== /banner ======@ -->
+          <!-- @====== top rated ======@ -->
+          <div class="category">
+            <h2 class="category-title">top rated movies</h2>
+            <div class="category-gallery"></div>
+          </div>
+          <!-- @====== /top rated ======@ -->
+        </section>
+        <!-- @====== /home ======@ -->
+      </main>
+      <!-- @====== /main ======@ -->
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --ff-accent: "Lobster", cursive;
+
+  --clr-primary: hsl(270, 50%, 40%);
+  --clr-orange: hsl(29, 96%, 50%);
+  --clr-lighter: rgba(0, 0, 0, 0.1);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(270, 40%, 68%);
+  --clr-neutral-400: hsl(215, 17%, 54%);
+  --clr-neutral-500: hsl(180, 6%, 29%);
+  --clr-neutral-600: hsl(225, 26%, 36%);
+
+  --sidebar-width: 15vw;
+
+  --fs-small: 1.2rem;
+  --fs-medium: 1.6rem;
+  --fs-big: 3rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-medium: 1.8rem;
+    --fs-big: 3.5rem;
+  }
+}

@@ -1,0 +1,65 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100%;
+  border-right: 2px solid var(--clr-lighter);
+  overflow: scroll;
+  color: var(--clr-neutral-500);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+.sidebar-brand {
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-brand a {
+  font-family: var(--ff-accent);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--clr-primary);
+}
+
+.sidebar-menu {
+  padding-left: 1rem;
+}
+
+.sidebar-menu:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.sidebar-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 133%;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.sidebar-item.active {
+  border-right: 0.5rem solid var(--clr-primary);
+}
+
+.sidebar-item.active .sidebar-link > * {
+  color: var(--clr-primary);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.sidebar-link span:nth-child(1) {
+  font-size: 3rem;
+}
+
+.sidebar-link span:nth-child(2) {
+  font-size: 1.6rem;
+  font-weight: 600;
+}

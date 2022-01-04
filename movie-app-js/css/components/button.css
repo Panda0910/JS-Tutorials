@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-100);
+}
+
+.btn-glass {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}

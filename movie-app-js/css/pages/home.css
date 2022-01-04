@@ -1,0 +1,103 @@
+.home {
+  padding: 3rem 2rem;
+}
+
+.banner {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--clr-neutral-100);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.banner-subheading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.banner-heading {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.banner-desc {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.banner-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.banner-btn .btn-primary {
+  width: 15rem;
+  text-align: center;
+}
+
+.banner img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.category {
+  padding: 2rem 0;
+}
+
+.category-title,
+.popular-title {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--clr-neutral-500);
+  margin-bottom: 1.6rem;
+}
+
+.category-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.category-item {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-info {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-name {
+  font-size: 1.6rem;
+  color: var(--clr-neutral-100);
+}
+
+.category-year {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--clr-neutral-100);
+}
