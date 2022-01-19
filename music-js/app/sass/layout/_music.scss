@@ -1,0 +1,27 @@
+@use "../utilities" as *;
+
+.music {
+  padding: 1rem 2rem;
+
+  &-box {
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &-info {
+    @include flex(space-between, center);
+    margin-bottom: 1.6rem;
+  }
+
+  &-heading {
+    color: var(--clr-blue-dark);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &-btn {
+    font-size: 1.8rem;
+    color: var(--clr-blue-neutral);
+  }
+}

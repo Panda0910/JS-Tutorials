@@ -1,0 +1,18 @@
+@use "../utilities" as *;
+
+.menu {
+  @include flex($ai: center);
+
+  &-item {
+    padding: 0.8rem 1.6rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--clr-blue-neutral);
+
+    &.active {
+      color: var(--clr-blue-dark);
+    }
+  }
+}

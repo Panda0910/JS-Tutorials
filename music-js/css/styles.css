@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --ff-body: "Poppins", sans-serif;
+  --fs-regular: 1.6rem;
+  --clr-orange: orange;
+  --clr-blue-neutral: rgb(84, 84, 129);
+  --clr-blue-dark: rgb(6, 6, 124);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-regular);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input {
+  border: 0;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playlist {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.playlist-img {
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.playlist-img img {
+  border-radius: 1rem;
+}
+.playlist-img ion-icon {
+  position: absolute;
+  bottom: 5rem;
+  right: 4rem;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  color: var(--clr-orange);
+}
+.playlist-info {
+  padding: 0 2rem;
+}
+.playlist-name {
+  color: var(--clr-blue-dark);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.playlist-author {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--clr-blue-neutral);
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu-item {
+  padding: 0.8rem 1.6rem;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--clr-blue-neutral);
+}
+.menu-item.active {
+  color: var(--clr-blue-dark);
+}
+
+#app {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 15vw;
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 1rem 0rem 1rem 1rem;
+  flex-shrink: 0;
+}
+.sidebar-brand {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #06065c;
+  margin-bottom: 1rem;
+}
+.sidebar-category {
+  padding: 1rem 0;
+}
+.sidebar-heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--clr-blue-neutral);
+  margin-bottom: 1rem;
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 0;
+  color: var(--clr-blue-neutral);
+}
+.sidebar-link-icon {
+  font-size: 2rem;
+}
+.sidebar-link-text {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.sidebar-link.active {
+  color: var(--clr-orange);
+  border-right: 5px solid var(--clr-orange);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+}
+
+.music {
+  padding: 1rem 2rem;
+}
+.music-box {
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+}
+.music-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.music-heading {
+  color: var(--clr-blue-dark);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.music-btn {
+  font-size: 1.8rem;
+  color: var(--clr-blue-neutral);
+}
+
+.play {
+  background: #43c6ac;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #191654, #43c6ac);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #191654, #43c6ac);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 2rem 4rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+}
+.play-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.play-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-img {
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: rotateInfi 15s infinite;
+}
+.play-info {
+  width: 75%;
+}
+.play-name {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.play-artist {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin: 0.8rem 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+.play-progress input {
+  width: 100%;
+  cursor: pointer;
+}
+.play-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-option ion-icon {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+}
+.play-option ion-icon[name=play] {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes rotateInfi {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

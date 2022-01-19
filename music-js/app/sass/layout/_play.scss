@@ -1,0 +1,84 @@
+@use "../utilities" as *;
+
+.play {
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #191654,
+    #43c6ac
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 2rem 4rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+
+  &-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &-box {
+    @include flex(space-between, center);
+  }
+
+  &-img {
+    width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: rotateInfi 15s infinite;
+  }
+
+  &-info {
+    width: 75%;
+  }
+
+  &-name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+
+  &-artist {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin: 0.8rem 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &-progress {
+    input {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  &-option {
+    @include flex(center, center);
+    ion-icon {
+      cursor: pointer;
+      font-size: 1.8rem;
+      padding: 1.6rem;
+      border-radius: 0.8rem;
+
+      &[name="play"] {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+@keyframes rotateInfi {
+  to {
+    transform: rotate(360deg);
+  }
+}
